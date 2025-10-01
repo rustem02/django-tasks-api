@@ -1,0 +1,22 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /api/token
+Traceback (most recent call last):
+  File "/Users/rustem/Downloads/django-tasks-api/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rustem/Downloads/django-tasks-api/.venv/lib/python3.12/site-packages/django/utils/deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rustem/Downloads/django-tasks-api/.venv/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rustem/Downloads/django-tasks-api/.venv/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/api/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+API exception: {'detail': ErrorDetail(string='No active account found with the given credentials', code='no_active_account')}
+API exception: {'detail': ErrorDetail(string='No active account found with the given credentials', code='no_active_account')}
+Watching for file changes with StatReloader
+API exception: {'detail': ErrorDetail(string='Учетные данные не были предоставлены.', code='not_authenticated')}
+API exception: {'title': [ErrorDetail(string='Это поле не может быть пустым.', code='blank')]}
